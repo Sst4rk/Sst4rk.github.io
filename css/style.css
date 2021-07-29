@@ -63,6 +63,7 @@ nav {
 	width: 100%;
 	top: 0;
 	position: fixed;
+	z-index: 999;
 }
 
 footer{
@@ -89,6 +90,13 @@ h3{
 	font-style: normal;
 	color: white;
 	font-size: 1.8em;
+	text-decoration: none;
+}
+
+h2{
+	font-family: atmospheric;
+	font-style: normal;
+	color: white;
 	text-decoration: none;
 }
 
@@ -229,15 +237,10 @@ h3{
 	transition-duration: 0.4s;
 }
 
-.descarga{
-	width: 300px;
-	height: 70px;
-}
-
 .descarga img{
-	width: 100%;
+	word-break: 350px;
+	max-width: 100%;
 }
-
 .descarga img:hover{
 	transform:scale(1.05);
 	transition-duration: 0.4s;
@@ -260,4 +263,18 @@ h3{
 .etiquetas{
 	text-align: initial;
 	margin: 10% 5% 10% 5%;
+}
+
+.imgProyecto{
+	width: 50%;
+}
+
+
+.articulo{
+  text-align: center;
+  height: auto;
+  padding: 30px;
+  background-color: #000c23;
+  border-radius: 10px;
+  margin: 2%;
 }
