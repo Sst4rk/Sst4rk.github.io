@@ -361,6 +361,7 @@ aside{
 	.aNav{
 		margin: 0;
 		border:1px solid white;
+		padding: 10% 0 10% 0;
 	}
 	.imgLogo{
 		width: 25%;
