@@ -355,7 +355,7 @@ aside{
 		transition-duration: 0.2s;
 		top: 8vh;
 		box-shadow: none;
-		margin-top: 25px;
+		height:auto;
 	}
 
 	.aNav{
