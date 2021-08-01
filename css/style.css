@@ -322,7 +322,7 @@ aside{
 .smHeaderImg{
 	padding:0% 0 0 10%;
 	display: none;
-	height: 100%;
+	height: 80%;
 }
 
 @media (max-width:768px){
@@ -369,7 +369,7 @@ aside{
 		display: block;
 		float: right;
 		padding: 0% 10% 0px 0%;
-		height: 100%;
+		height: 80%;
 	}
 
 	#menu-icon:checked ~ nav{
