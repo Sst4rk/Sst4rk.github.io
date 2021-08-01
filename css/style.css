@@ -325,7 +325,7 @@ aside{
 	display: none;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1000px){
 
 	.smHeader{
 		height:11vh;
