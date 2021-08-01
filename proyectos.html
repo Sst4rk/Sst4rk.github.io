@@ -12,15 +12,22 @@
 
 <body>
 
-<nav>	
-	<ul class="navegador">
-		<li><a href="index.html" class="logoNav"><img class="imgLogo" src="img\logo.png"></a></li>
-		<li><a class="aNav" href="index.html">HOME</a></li>
-		<li><a class="aNav" href="proyectos.html">PROYECTOS</a></li>
-		<li><a class="aNav" href="acerca.html">ACERCA</a></li>
-		<li><a class="aNav" href="contacto.html">CONTACTO</a></li>
-	</ul>
-</nav>
+<div class="smHeader">
+	
+	<img class="smHeaderImg" src="img\logo.png">
+	<input type="checkbox" id="menu-icon">
+	<label for="menu-icon"><img class="menu-img" src="img\menu.png"></label>
+	<nav>
+		<ul class="navegador">
+			<li><a href="index.html" class="logoNav"><img class="imgLogo" src="img\logo.png"></a></li>
+			<li><a class="aNav" href="index.html">HOME</a></li>
+			<li><a class="aNav" href="proyectos.html">PROYECTOS</a></li>
+			<li><a class="aNav" href="articulos.html">ARTICULOS</a></li>
+			<li><a class="aNav" href="acerca.html">ACERCA</a></li>
+			<li><a class="aNav" href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>
+</div>
 
 <main class="contenedor">
 	<article>
@@ -31,11 +38,13 @@
 					
 					<div class="proyectos">
 
-						<div class="row around-xs">
-						    <div class="col-xs-4">
+						<div class="row around-xs center-xs">
+						    <div class="col-xs-8 col-md-4 col-lg-3">
 						        <div class="box">
-									<a href="tclean.html"><img src="img\\Tclean.png"></a>
-									<a href="tclean.html"><h2>Tclean</h2></a>
+						        	<div class="listProyectos">
+										<a href="tclean.html"><img src="img\\Tclean.png"></a>
+										<a href="tclean.html"><h2>Tclean</h2></a>
+						        	</div>
 						        </div>
 						    </div>
 						</div>

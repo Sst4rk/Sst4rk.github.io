@@ -48,7 +48,6 @@ head{
 body{
 	background:#000E3F;
 	margin: 0px;
-	margin-top: 17vh;
 }
 
 ul{
@@ -57,8 +56,6 @@ ul{
 }
 
 nav {
-	max-height: 20vh;
-	min-height: 15vh;
 	background-color: #000C23;
 	width: 100%;
 	top: 0;
@@ -71,10 +68,9 @@ nav {
 footer{
 	background-color: #000c23;
 	margin-top: 0;
-	height: 15vh;
+	height: 12vh;
 	width: 100%;
 	bottom: 0;
-	min-height: 20vh;
 	box-shadow: 0px -5px 15px skyblue;
 }
 
@@ -94,6 +90,7 @@ h3{
 	color: white;
 	font-size: 1.8em;
 	text-decoration: none;
+	text-align: center;
 }
 
 h2{
@@ -104,6 +101,11 @@ h2{
 }
 
 /*-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------*/
+
+
 
 /*Espesifico*/
 
@@ -119,7 +121,7 @@ h2{
 
 .navegador li {
 	float: left;
-	width: 20%;
+	width: 16.4%;
 	height: 100%;
 }
 
@@ -180,13 +182,12 @@ h2{
 /*-----------------------------------------------------*/
 
 .contenedor{
-	margin-top: 0;
+	margin-top: 12vh;
 	margin-right: 8%;
 	margin-left: 8%;
 	background-color: #000e3f;
-	border-radius: 25px;
-	padding:20px ;
-  min-height: 65vh;
+	padding:10px ;
+  	min-height: 74vh;
 
 }
 
@@ -194,12 +195,12 @@ h2{
 	color: white;
 	font-family: calibri;
 	text-align: center;
-	padding-left:3%;
-	padding-right:3%;
+	padding-left:10%;
+	padding-right:10%;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 45pt;
-	line-height: 200%;
+	font-size: 3em;
+	line-height: 150%;
 }
 
 .proyectos{
@@ -217,6 +218,7 @@ h2{
 	font-style: normal;
 	color: white;
 	text-decoration: none;
+	font-size: 100%;
 }
 
 .contenedor article{
@@ -226,9 +228,8 @@ h2{
 }
 
 .descripcion{
-	width: 90%;
 	text-align: justify;
-	margin: 2% 2% 2% 2%;
+	margin: 3% 3% 3% 3%;
 
 }
 .descripcion a {
@@ -285,4 +286,94 @@ h2{
   border-radius: 10px;
   margin: 2%;
   box-shadow: 0px 0px 10px skyblue
+}
+
+.listProyectos{
+	background-color:#011439 ;
+	border: outset;
+	border-radius: 2%;
+}
+
+.listProyectos:hover{
+	background-color:black ;
+	border: groove;
+	transform: scale(1.03);
+}
+
+aside{
+	background-color: green;
+}
+#menu-icon{
+	display: none;
+}
+
+.menu-img{
+	display: none;
+}
+
+.smHeader{
+	position:absolute;
+	width: 100%;
+	top: 0;
+	background-color:#000c23;
+	height:11vh;
+}
+
+.smHeaderImg{
+	width:25%;
+	margin:15px 0 0 100px;
+	display: none;
+}
+
+@media (max-width:768px){
+
+	.smHeader{
+		height:11vh;
+		border-bottom: 1px solid white;
+		box-shadow:0px 0px 15px white;
+		position: fixed;
+	}
+	.smHeaderImg{
+		display: inline;
+	}
+	.navegador li{
+		float: none;
+		width: 100%;
+		background-color: #0a0a40;
+	}
+	.contenedor{
+		margin:0;
+		margin-top: 9vh;
+	}
+	.logoNav{
+		display: none;
+	}
+
+	nav{
+		transform: translate(100%);
+		transition-duration: 0.2s;
+		top: 8vh;
+		box-shadow: none;
+		margin-top: 25px;
+	}
+
+	.aNav{
+		margin: 0;
+		border:1px solid white;
+	}
+	.imgLogo{
+		width: 25%;
+	}
+	.menu-img{
+		display: block;
+		width: 10%;
+		float: right;
+		margin: 10px 40px 0px 15px;
+	}
+
+	#menu-icon:checked ~ nav{
+			transform: translate(0%);
+			transition-duration: 0.4s;
+		}
+
 }
