@@ -187,7 +187,11 @@ h2{
 	margin-left: 8%;
 	background-color: #000e3f;
 	padding:10px ;
+<<<<<<< HEAD
   min-height: 75vh;
+=======
+  	min-height: 75vh;
+>>>>>>> 21f64591c661b6f8c573b429212f6a03ed1720db
 
 }
 
@@ -325,7 +329,7 @@ aside{
 	height: 100%;
 }
 
-@media (max-width:768px){
+@media screen and (max-width:800px){
 
 	.smHeader{
 		height:11vh;
