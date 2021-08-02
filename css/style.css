@@ -130,7 +130,7 @@ h2{
 	display: block;
 	color: white;
 	text-decoration: none;
-	font-size: 100%;
+	font-size: 80%;
 	padding-bottom: 5%;
 	border-bottom: 2px solid white;
 	border-top: 2px solid	white;
@@ -187,11 +187,7 @@ h2{
 	margin-left: 8%;
 	background-color: #000e3f;
 	padding:10px ;
-<<<<<<< HEAD
   min-height: 75vh;
-=======
-  	min-height: 75vh;
->>>>>>> 21f64591c661b6f8c573b429212f6a03ed1720db
 
 }
 
@@ -310,8 +306,10 @@ aside{
 #menu-icon{
 	display: none;
 }
+.menu-icon-bar{
+}
 
-.menu-img{
+.menu-bar{
 	display: none;
 }
 
@@ -324,12 +322,12 @@ aside{
 }
 
 .smHeaderImg{
-	padding:0% 0 0 10%;
+	padding:2% 0 2% 10%;
 	display: none;
-	height: 100%;
+	height: 60%;
 }
 
-@media screen and (max-width:800px){
+@media (max-device-width:768px),(max-width: 800px){
 
 	.smHeader{
 		height:11vh;
@@ -338,17 +336,19 @@ aside{
 		position: fixed;
 		z-index: 999;
 	}
+
 	.smHeaderImg{
 		display: inline;
 	}
 	.navegador li{
 		float: none;
 		width: 100%;
-		background-color: #0a0a40;
+		/*background-color: #000c23;*/
+		background: linear-gradient(to bottom, #000c23, #040b69);
 	}
 	.contenedor{
 		margin:0;
-		margin-top: 9vh;
+		margin-top: 15vh;
 	}
 	.logoNav{
 		display: none;
@@ -359,23 +359,29 @@ aside{
 		transition-duration: 0.2s;
 		top: 8vh;
 		box-shadow: none;
-		margin-top: 25px;
+		height: auto;
 	}
 
 	.aNav{
 		margin: 0;
 		border:1px solid white;
+		padding: 6% 0 6% 0;
 	}
 	.imgLogo{
 		width: 25%;
 	}
-	.menu-img{
+	.menu-bar{
 		display: block;
 		float: right;
-		padding: 0% 10% 0px 0%;
-		height: 100%;
-	}
+		padding: 2% 10% 0px 0%;
+		font-size: 150%;
+		color: white;
+		height: 45%;
 
+	}
+	.fas .fa-bars{
+		display: block;
+	}
 	#menu-icon:checked ~ nav{
 			transform: translate(0%);
 			transition-duration: 0.4s;
