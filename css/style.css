@@ -379,9 +379,12 @@ aside{
 		height: 45%;
 
 	}
+<<<<<<< HEAD
 	.fas .fa-bars{
 		display: block;
 	}
+=======
+>>>>>>> 2e0790115ac6c99e24647ab32d9cf1ad4d5a4b8d
 	#menu-icon:checked ~ nav{
 			transform: translate(0%);
 			transition-duration: 0.4s;
