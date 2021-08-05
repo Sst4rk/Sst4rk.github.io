@@ -130,7 +130,7 @@ h2{
 	display: block;
 	color: white;
 	text-decoration: none;
-	font-size: 80%;
+	font-size: 100%;
 	padding-bottom: 5%;
 	border-bottom: 2px solid white;
 	border-top: 2px solid	white;
@@ -163,7 +163,7 @@ h2{
 /*START Footer*/
 
 .imgFooter{
-	width: 10%;
+	max-width: 12%;
 }
 
 .imgFooter:hover{
@@ -190,6 +190,9 @@ h2{
   min-height: 75vh;
 
 }
+.center-text{
+		text-align: center !important;
+	}
 
 .contenedor h1 {
 	color: white;
@@ -230,6 +233,8 @@ h2{
 .descripcion{
 	text-align: justify;
 	margin: 3% 3% 3% 3%;
+	width:100%;
+	overflow: auto;
 
 }
 .descripcion a {
@@ -322,7 +327,7 @@ aside{
 }
 
 .smHeaderImg{
-	padding:2% 0 2% 10%;
+	padding:2.5% 0 2% 10%;
 	display: none;
 	height: 60%;
 }
@@ -336,7 +341,20 @@ aside{
 		position: fixed;
 		z-index: 999;
 	}
+	p{
+		text-align: justify;
+		font-size: 95%;
+		font-style: normal;
 
+	}
+
+	.descripcion p {
+		font-weight: bold;
+	}
+
+	.contenedor h1{
+		font-size: 2em;
+	}
 	.smHeaderImg{
 		display: inline;
 	}
@@ -344,7 +362,7 @@ aside{
 		float: none;
 		width: 100%;
 		/*background-color: #000c23;*/
-		background: linear-gradient(to bottom, #000c23, #040b69);
+		background: linear-gradient(to bottom, #000c23, #0f1344);
 	}
 	.contenedor{
 		margin:0;
@@ -362,6 +380,18 @@ aside{
 		height: auto;
 	}
 
+	footer{
+		height: 10vh;
+	}
+
+	.liFooter{
+		margin-top: 3%;
+	}
+
+	.liFooter img{
+		min-width: 20%;
+	}
+
 	.aNav{
 		margin: 0;
 		border:1px solid white;
@@ -373,18 +403,13 @@ aside{
 	.menu-bar{
 		display: block;
 		float: right;
-		padding: 2% 10% 0px 0%;
+		padding: 3% 10% 0px 0%;
 		font-size: 150%;
 		color: white;
 		height: 45%;
+		cursor: pointer;
 
 	}
-<<<<<<< HEAD
-	.fas .fa-bars{
-		display: block;
-	}
-=======
->>>>>>> 2e0790115ac6c99e24647ab32d9cf1ad4d5a4b8d
 	#menu-icon:checked ~ nav{
 			transform: translate(0%);
 			transition-duration: 0.4s;
