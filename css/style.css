@@ -48,7 +48,9 @@ head{
 body{
 	background:#000E3F;
 	margin: 0px;
-	background-image:url(..\img\primer.jpg);
+}
+html{
+	background-image:url('\img\primer.jpg');
 }
 
 ul{
