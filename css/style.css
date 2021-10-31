@@ -50,7 +50,7 @@ body{
 	margin: 0px;
 }
 html{
-	background-image:url('\img\primer.jpg');
+	background-image:url('/img/primer.jpg');
 }
 
 ul{
