@@ -3,80 +3,103 @@
 <head>
 	<meta charset="utf-8">
 	<meta property="og:title" content="HOME | STARK-SYSTEM"> 
-	<meta property="og:image" content="https://sst4rk.github.io/img/primer.jpg">
 	<meta name="description" content="St4rk-system. Proyectos en diferentes lenguajes de programacion. Python,C#,Bash"/>
 	<meta name="keywords" content="python,st4rk,c,programacion,tclean"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ST4RK-SYSTEM</title>
 	<link rel="stylesheet" type="text/css" href="css\\style.css">
-	<link rel="stylesheet" type="text/css" href="css\\flexboxgrid.css">
-	<link rel="icon" type="image/png" href="img\\logoS.png" alt="logoS">
+	<noscrip><link rel="stylesheet" type="text/css" href="css\\flexboxgrid.css"></noscrip>
+	<link rel="icon" type="image/svg" href="img\\s.svg">
+	
 	<link rel="stylesheet" type="text/css" href="css\awesomecss\all.min.css">
 </head>
 
 
 
 <body>
+	<div class="row movilMenuIcon" onclick="menuOpener()">
+		<div class="row">
+			<div class="col-xs-2">
+				<img class="imgMenu" src="img\menu.png" alt="Menu">
+			</div>
+			<div class="col-xs-10 center-xs">
+				<text class="menuText">MENU</text>
+			</div>
+		</div>
+	</div>
 
-<div class="smHeader">
-	
-	<a href="index.html"><img class="smHeaderImg" src="img\logo.png"></a>
-	<input type="checkbox" id="menu-icon">
-	<label for="menu-icon"><img class="menu-bar" src="img\menu.png"></label>
-	<nav>
-		<ul class="navegador">
-			<li class="logoNav"><a href="index.html" class="logoNav"><img class="imgLogo" src="img\logo.png"></a></li>
-			<li><a class="aNav" href="index.html"><i class="fas fa-home"></i>  HOME</a></li>
-			<li><a class="aNav" href="proyectos.html"><i class="fas fa-archive"></i>    PROYECTOS</a></li>
-			<li><a class="aNav" href="articulos.html"><i class="fas fa-newspaper"></i>    ARTICULOS</a></li>
-			<li><a class="aNav" href="acerca.html"><i class="fas fa-address-card"></i>    ACERCA</a></li>
-			<li><a class="aNav" href="contacto.html"><i class="fas fa-envelope-open"></i>    test</a></li>
-		</ul>
-	</nav>
-</div>
+	<div class="row bettwen-lg main">
 
-<main class="contenedor">
-	<article>
-		<h1>PROYECTOS DE test EN DIFERENTES LENGUAJES </h1>
-		<div class="row center-xs">
-		    <div class="col-xs-11">
-		        <div class="box">
-					
-					<div class="proyectos">
+		<div id="navegador" class="col-lg-2 col-xs-12 center-xs navegador" >
+			<div class="box logoNavegador">
+				
+				<a href="index.html"><img class="logo" src="img\s.svg" alt="logo-st4rk"></a>
+				<a href="index.html"><img class="logoLetras" src="img\st4rk-system.svg" alt="st4rk-system"></a>
 
-						<div class="row around-xs">
-						    <div class="col-sm-10 col-md-5 col-lg-4">
-						        <div class="box">
-									<a href="tclean.html"><img src="img\\Tclean.png"></a>
-									<a href="tclean.html"><h2>Tclean</h2></a>
-						        </div>
-						    </div>
-						    <div class="col-sm-12 col-md-7 col-lg-8 center-item">
-						        <div class="box middle-xs">
-						        	<div class="descripcion">
-										<p>Herramienta creada en <a href="https://www.python.org" target="_blank">Python</a> para la plataforma Windows, con el objetivo de simplificar la tarea de limpiar los archivos temporales del sistema. <a href="tclean.html"><b>Leer mas...</b></a></p> 
-						        	</div>
-						        </div>
-						    </div>
-						</div>
-					</div >
-		            
-		        </div>
-		    </div>
+			</div>
+			<div class="box text-nav"><a href="index.html" >HOME</a></div>
+			<div class="box text-nav"><a href="#" >PROYECTOS</a></div>
+			<div class="box text-nav"><a href="#" >BLOG</a></div>
+			<div class="box text-nav"><a href="#" >ACERCA</a></div>
+			<div class="box text-nav"><a href="#" >CONTACTO</a></div>
+			<div class="row center-xs redes">
+				<div class="col-xs-4 "><div class="box"><a href="#"><img class="imgRedes" src="img/twitter.png" alt="twitter"></a></div></div>
+				<div class="col-xs-4 "><div class="box"><a href="#"><img class="imgRedes" src="img/github.png" alt="twitter"></a></div></div>
+				<div class="col-xs-4 "><div class="box"><a href="#"><img class="imgRedes" src="img/in.png" alt="twitter"></a></div></div>
+			</div>
 		</div>
 
-	</article>
-</main>
+		<div class="vertical-line"></div>
+		<div class="col-lg-9 col-xs-12">
+			<div class="contenedor row">
 
-<footer>
-	<div>
-		<ul>
-			<li class="liFooter"><a href="https://twitter.com/St4rkSystem" target="_blank"><img class="imgFooter" src="img\twitter.png"></a></li>
-			<li class="liFooter"><a href="https://www.linkedin.com/in/luisebprogramer/" target="_blank"><img class="imgFooter" src="img\in.png"></a></li>
-			<li class="liFooter"><a href="https://github.com/sst4rk" target="_blank"><img class="imgFooter" src="img\github.png"></a></li>
-			<li class="liFooter"><a href="contacto.html"><img class="imgFooter" src="img\correo.png"></a></li>
-		</ul>
+				<div class="row textoBarraNavegacion">
+					<a href="#">Proyectos > </a>
+					<a href="#"> Tclean</a>
+				</div>
+
+				<div clas="row">
+
+					<div class="ext_marco col-lg-12">
+						<div class="inter_marco box">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="box texto">
+										<div class="cajaTitulo">
+											<h1 class="tituloCentral"><span><img class="imgTitulo" src="img/tcleanLetras.svg" alt="tituloTclean"></span></h1>
+										</div>
+										<div class="cajaArticulo">
+											<h2>DESCRIPCION</h2>
+											<p>Herramienta creada en <b>Python</b> para la plataforma Windows, con el objetivo de simplificar la tarea de limpiar los archivos temporales del sistema.</p> 
+											<p>Esta herramienta, crea un icono en la bandeja del sistema para que con un simple click, puedas eliminar todos los archivos temporales, que genera el sistema y que al generar y no eliminarse automaticamente realentizan al mismo sistema.</p>
+											<div class="center-xs"><img class="imgArticulo" src="img\screenBandejaTclean.png" alt="screenshot1"></div>
+											<p>Con el menu integrado que se desplega con el <b>Click Derecho</b> puedes hacer que la herramienta se ejecute al iniciar Windows.</p>
+											<div class="center-xs"><img class="imgArticulo" src="img\screenMenuTclean.png" alt="screenshot2"></div>
+											<h3>PROBLEMAS COMUNES</h3>
+											<p>Para activar las notificaciones de <b>Tclean.</b> En las configuraciones de Windows dirigete a <b>Sistema</b> > <b>Notificaciones y acciones</b> > <b> Obtener notificaciones de estos remitentes.</b> Busca <b>Tclean</b> y activa las notificaciones</p>
+											<div class="center-xs"><img style="width: 95%;padding:2%;" src="img\screenNotifyTclean.png" alt="screenshot3"></div>
+											<h3>DESCARGA</h3>
+											<div class="center-xs descarga"><a href="https://www.mediafire.com/file/v3fm06uogup03fc/Tclean_v0.1.rar/file" target="_blank" rel="noopener"><img src="img\\descarga.png" alt="Descarga"></a></div>
+										</div>
+									</div>
+	
+								</div>
+	
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	
+
+
 	</div>
-</footer>
+
+	<script src="js\app.js"></script>
 
 </body>
+
 </html>	
