@@ -1,5 +1,1 @@
-function menuOpener(){
-    let menuIcon = document.getElementById('navegador');
-        menuIcon.classList.toggle('navegadorOpen');
-}
-    
+function menuOpener(){let e=document.getElementById("navegador");e.classList.add("navegadorOpen"),e.classList.remove("navegadorClose")}function menuCloser(){let e=document.getElementById("navegador");e.classList.add("navegadorClose"),e.classList.remove("navegadorOpen")}

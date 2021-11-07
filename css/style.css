@@ -103,7 +103,7 @@ p{
     width:100%;
 
 }
-.textoBarraNavegacion>a{
+.textoBarraNavegacion a{
     font-size: 1.2em;
     text-decoration:none;
     color:white;
@@ -143,9 +143,11 @@ p{
 }
 
 .imgRedes{
-    max-width:40%;
+    width:40%;
     height:auto;
     aspect-ratio: attr(width) / attr(height);
+    max-width: 42px;
+    max-height:42px;
 }
 .imgRedes:hover{
     transform: scale(1.4);
@@ -206,9 +208,29 @@ h1{
     color:yellow;
 }
 
+.baner{
+    width:100%;
+    height:auto;
+}
+
+.baner img{
+    width:100%;
+    height:100%;
+    border:solid 1px white;
+}
+
+img {
+    aspect-ratio: attr(width) / attr(height);
+}
+
+.closeMenuIcon{
+    display:none;
+}
+
+
 /*------------------------------TABLETS-------------------------------*/
 
-@media (max-width:1024px){
+@media (max-width:64em){
     .vertical-line{
         display:none;
     }
@@ -223,11 +245,11 @@ h1{
         padding: 2%;
         font-size: 2em;
         font-weight: bold;
-        height:11vh;
         position: fixed;
     }
     body{
         margin:0;
+        background-position: top 11% right 15px;
     }
     .ext_marco{
         margin:0%;
@@ -244,7 +266,7 @@ h1{
         transform: translate(-100%);
 		transition-duration: 0.3s;
         position: fixed;
-        margin-top:11vh;
+        top: 0;
         width:100%;
         border-bottom-right-radius:2%;
         border-bottom-left-radius:2%;
@@ -260,6 +282,15 @@ h1{
         position: fixed;
         background-color: #020a27;
     }
+
+    .navegadorClose{
+        transform: translate(-100%);
+		transition-duration: 0.2s;
+        display:block;
+        position: fixed;
+        background-color: #020a27;
+    }
+
     .redes{
         padding: 5% 0 5% 0;
         border-top:solid 2px #585858;
@@ -267,12 +298,13 @@ h1{
     .imgRedes{
         width:20%
     }
+
     .text-nav{
         margin:8% 0 8% 0;
         font-weight: bolder;
     }
     .contenedor{
-        padding:5%;
+        padding: 15% 5% 5% 5%;
     }
     .imgTitulo{
         width:50%;
@@ -283,13 +315,28 @@ h1{
     p{
         font-size: 0.8em;
     }
-
+    .cajaTitulo{
+        margin-top: 0%;
+    }
+    .closeMenuIcon{
+        display: block;
+        padding:5% 0 5% 0;
+        font-weight: bolder;
+        background-color:#000516;
+    }
+    .imgCloseMenu{
+        width: 40%;
+    }
+    .textClose{
+        font-size: 2em;
+    }
+    
 }
 /*--------------------------------------------------------------------*/
 
 /*------------------------------CELULARES-------------------------------*/
 
-@media (max-width:768px) {
+@media (max-width:48em) {
     .vertical-line{
         display:none;
     }
@@ -305,7 +352,6 @@ h1{
         color:white !important;
         font-size: 2em;
         font-weight: bold;
-        height:13vh;
         position:fixed;
     }
     .movilMenuIcon>text{
@@ -313,6 +359,7 @@ h1{
     }
     body{
         margin:0;
+        background-image:none;
     }
     .ext_marco{
         margin:0%;
@@ -331,7 +378,7 @@ h1{
         transform: translate(-100%);
 		transition-duration: 0.3s;
         position: fixed;
-        margin-top:13vh;
+        top:0;
         width:100%;
         border-bottom-right-radius:4%;
         border-bottom-left-radius:4%;
@@ -368,7 +415,16 @@ h1{
         padding:10% 5% 15% 5%;
     }
     p{
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+    .tituloCentral>span{
+        padding:0 15% 10% 15%;
+    }
+    .imgCloseMenu{
+        width: 50%;
+    }
+    .textClose{
+        font-size: 1.5em;
     }
 }
 /*----------------------------------------------------------------------*/
