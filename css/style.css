@@ -62,7 +62,6 @@ img.logoLetras{
 
 .ext_marco{
     width:100%;
-    /*min-height: 85%;*/
     background:
         linear-gradient(135deg, transparent 23px, #fff 0) top left,
         linear-gradient(-45deg, transparent 23px, #fff 0) bottom left;
@@ -71,7 +70,6 @@ img.logoLetras{
     padding:2px;
 
 }
-
 .inter_marco{
     width:100%;
     height:100%;
@@ -82,6 +80,33 @@ img.logoLetras{
     background-repeat: no-repeat;
     margin:0px auto;
 }
+
+
+.ext_marcoRev{
+    width:100%;
+    /*min-height: 85%;*/
+    background:
+        linear-gradient(225deg, transparent 23px, #fff 0) top left,
+        linear-gradient(45deg, transparent 0px, #fff 0) bottom left;
+    background-size:100% 51%;
+    background-repeat: no-repeat;
+    padding:2px;
+
+}
+.inter_marcoRev{
+    width:100%;
+    height:100%;
+    background:
+        linear-gradient(225deg, transparent 23px, #000E3F 0) top left,
+        linear-gradient(45deg, transparent 0px, #000E3F 0) bottom left;
+    background-size:100% 51%;
+    background-repeat: no-repeat;
+    margin:0px auto;
+}
+
+
+
+
 .contenedor{
     padding:5%;
 }
@@ -152,6 +177,7 @@ p{
 .imgRedes:hover{
     transform: scale(1.4);
     transition-duration:0.2s;
+    filter: invert(34%) sepia(34%) saturate(4362%) hue-rotate(161deg) brightness(97%) contrast(88%);
 }
 
 #menu-icon{
@@ -227,7 +253,37 @@ img {
     display:none;
 }
 
+.cajaPreviewProyecto{
+    padding:15%;
+    opacity: 0.55;
+}
 
+.previewProyecto a, h2, p{
+    text-decoration:none;
+    color:white;
+}
+
+.cajaPreviewProyecto:hover{
+    cursor: pointer;
+    transform:scale(1.08);
+    transition-duration: 0.75s;
+    opacity:1;
+}
+.previewProyecto img{
+    width:70%;
+}
+
+.previewProyecto p {
+    font-style:arial;
+    }
+
+.cajaProyectos{
+    padding:5%;
+}
+
+
+
+/*------------------------------TABLETS-------------------------------*/
 /*------------------------------TABLETS-------------------------------*/
 
 @media (max-width:64em){
