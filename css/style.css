@@ -14,7 +14,10 @@ body{
 }
 .logo{
     width:30%;
-    margin-top:20%;
+    padding:20%;
+}
+.logoNavegador{
+    padding:10% 0 20% 0;
 }
 img.logo{
     width:100;
@@ -27,8 +30,6 @@ img.logoLetras{
 }
 .logoLetras{
     width:70%;
-    margin-top:20%;
-    margin-bottom: 20%;
 }
 
 .vertical-line{
@@ -39,7 +40,7 @@ img.logoLetras{
 
 
 .text-nav{
-    margin:15% 0 25% 0;
+    padding:15% 0 15% 0;
     font-size: 1.2em;
     width:100%;
     font-family: calibri light;
@@ -48,6 +49,7 @@ img.logoLetras{
 .text-nav>a{
     text-decoration: none;
     color:white;
+    padding:13% 25% 13% 25%;
 }
 .text-nav>a:hover{
     text-decoration: none;
@@ -302,6 +304,7 @@ img {
         font-size: 2em;
         font-weight: bold;
         position: fixed;
+        box-shadow: 0px 1px 15px black;
     }
     body{
         margin:0;
@@ -356,7 +359,7 @@ img {
     }
 
     .text-nav{
-        margin:8% 0 8% 0;
+        padding:6% 0 6% 0;
         font-weight: bolder;
     }
     .contenedor{
@@ -409,6 +412,7 @@ img {
         font-size: 2em;
         font-weight: bold;
         position:fixed;
+        
     }
     .movilMenuIcon>text{
         text-align: center;
@@ -455,7 +459,7 @@ img {
         border-top:solid 2px #585858;
     }
     .text-nav{
-        margin:8% 0 10% 0;
+    
         font-weight: bold;
     }
     .imgRedes{
