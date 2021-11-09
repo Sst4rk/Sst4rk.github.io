@@ -1,23 +1,27 @@
 html {
     background-color:#000E3F;
     margin:0;
+    scroll-behavior: smooth;
 }
 body{
-    margin:0 30px 0 30px;
+    margin:0;
     color:white;
-    height:100vh;
+    height:100%;
     font-family:"calibri";
     background-image: url('../img/lineaCircuit.svg');
     background-repeat:no-repeat;
     background-position: top right;
     background-size: 5.5%;
 }
+a{
+    text-decoration:none;
+}
 .logo{
     width:30%;
     padding:20%;
 }
 .logoNavegador{
-    padding:10% 0 20% 0;
+    padding:0 0 20% 0;
 }
 img.logo{
     width:100;
@@ -41,7 +45,7 @@ img.logoLetras{
 
 .text-nav{
     padding:15% 0 15% 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width:100%;
     font-family: calibri light;
     font-weight:bold;
@@ -58,7 +62,7 @@ img.logoLetras{
 
 
 .main{
-    height:100%;
+    height:100%;padding:0;
 }
 
 
@@ -106,14 +110,8 @@ img.logoLetras{
     margin:0px auto;
 }
 
-
-
-
 .contenedor{
     padding:5%;
-}
-.main{
-    padding:0;
 }
 .texto{
     padding:6%;
@@ -166,13 +164,16 @@ p{
 .imgTitulo{
     width:32%;
     height:auto;
-    aspect-ratio: attr(width) / attr(height);
+
 }
 
+.redes{
+    padding-top: 5%;
+}
 .imgRedes{
     width:40%;
     height:auto;
-    aspect-ratio: attr(width) / attr(height);
+  
     max-width: 42px;
     max-height:42px;
 }
@@ -248,7 +249,8 @@ h1{
 }
 
 img {
-    aspect-ratio: attr(width) / attr(height);
+    width: 100%;
+    height:100%;
 }
 
 .closeMenuIcon{
@@ -283,6 +285,54 @@ img {
     padding:5%;
 }
 
+.previewArticulo{
+    border:solid 1px white;
+    padding:2%;
+}
+.previewArticulo img{
+    width:355px;
+    height:180px;
+}
+.previewArticulo span{
+    font-size: 100%;
+    font-weight:bolder;
+}
+.cajaParaArticulo{
+    padding:3%;
+    opacity:60%;
+}
+.cajaParaArticulo:hover{
+    opacity:100%;
+    transition-duration: 1.5s;
+}
+
+.leerMas{
+    float:right;
+    color:yellow;
+    text-decoration:none;
+    border-radius: 2px;
+    padding:1%;
+    background-color: #187ec7;
+
+}
+
+.botonArriba{
+    color: white;
+    font-weight: 800;
+    font-size: xxx-large;
+    background-color: #3c466a;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.1% 0.75% 0.1% 0.75%;
+    border-radius: 9%;
+    position: fixed;
+    bottom: 10px;
+    transition-duration: 1s;
+    right: 10px;
+    opacity: 0%;
+}
+
+
 
 
 /*------------------------------TABLETS-------------------------------*/
@@ -305,6 +355,7 @@ img {
         font-weight: bold;
         position: fixed;
         box-shadow: 0px 1px 15px black;
+        z-index:100;
     }
     body{
         margin:0;
@@ -318,7 +369,6 @@ img {
         
         width: 40%;
         height: auto;
-        aspect-ratio: attr(width) / attr(height);
     }
 
     .navegador{
@@ -329,6 +379,7 @@ img {
         width:100%;
         border-bottom-right-radius:2%;
         border-bottom-left-radius:2%;
+        z-index:102;
     }
     .logoNavegador{
         display: none;
@@ -382,6 +433,7 @@ img {
         padding:5% 0 5% 0;
         font-weight: bolder;
         background-color:#000516;
+        z-index:1010;
     }
     .imgCloseMenu{
         width: 40%;
@@ -389,7 +441,15 @@ img {
     .textClose{
         font-size: 2em;
     }
-    
+    .previewArticulo{
+        justify-content: center;
+    }
+    .previewArticulo img{
+        width:100%;
+    }
+    .text-nav a{
+        padding: 2% 30% 2% 30%;
+    }
 }
 /*--------------------------------------------------------------------*/
 
@@ -429,7 +489,7 @@ img {
         
         width: 50%;
         height: auto;
-        aspect-ratio: attr(width) / attr(height);
+     
     }
     .navegadorOpen{
         width:100%;
@@ -486,5 +546,6 @@ img {
     .textClose{
         font-size: 1.5em;
     }
+    
 }
 /*----------------------------------------------------------------------*/
