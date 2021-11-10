@@ -341,6 +341,11 @@ img {
     color:white;
 }
 
+.descarga img:hover{
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+
+}
 
 
 /*------------------------------TABLETS-------------------------------*/
