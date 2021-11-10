@@ -291,8 +291,7 @@ img {
     padding:2%;
 }
 .previewArticulo img{
-    width:355px;
-    height:180px;
+    width: 95%;
 }
 .previewArticulo span{
     font-size: 100%;
