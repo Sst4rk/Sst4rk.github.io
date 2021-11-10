@@ -29,43 +29,20 @@
 		</div>
 	</div>
 
-	<div class="row around-xs main">
+	<div class="row center-xs main">
 
-		<div id="navegador" class="col-md-2 col-xs-12 center-xs navegador" >
-			<div class="box logoNavegador">
-				
-				<a href="index.html"><img class="logo" src="/img/s.svg" alt="logo-st4rk"></a>
-				<a href="index.html"><img class="logoLetras" src="/img/st4rk-system.svg" alt="st4rk-system"></a>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script> 
+			$(function(){
+				$("#navegador").load("/menuNav.html"); 
+				$("#footer").load("/footer.html");
+			});
+		</script>
 
-			</div>
-			<div class="box closeMenuIcon" onclick="menuCloser()">
-				<div class="row middle-xs">
-					<div class="col-xs-10 center-xs">
-						<div class="box">
-							<text class="textClose">CLOSE</text>
-						</div>
-					</div>
-					<div class ="col-xs-2 center-xs">
-						<div class="box">
-							<img class="imgCloseMenu" src="/img/closeMenu.svg" alt="CloseMenu">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="box text-nav"><a href="/index.html" >HOME</a></div>
-			<div class="box text-nav"><a href="/articulos.html" >ARTICULOS</a></div>
-			<div class="box text-nav"><a href="/proyectos.html" >PROYECTOS</a></div>
-			<div class="box text-nav"><a href="/contacto.html" >CONTACTO</a></div>
-			<div class="box text-nav"><a href="/acerca.html" >ACERCA</a></div>
-			<div class="row center-xs redes">
-				<div class="col-xs-4 "><div class="box"><a href="https://twitter.com/St4rkSystem" target="_blank" rel="noopener" ><img class="imgRedes" src="/img/twitter.png" alt="twitter"></a></div></div>
-				<div class="col-xs-4 "><div class="box"><a href="https://github.com/sst4rk" target="_blank" rel="noopener"><img class="imgRedes" src="/img/github.png" alt="twitter"></a></div></div>
-				<div class="col-xs-4 "><div class="box"><a href="#" target="" rel="noopener"><img class="imgRedes" src="/img/in.png" alt="twitter"></a></div></div>
-			</div>
-		</div>
+		<div id="navegador" class="col-md-2 col-xs-12 center-xs navegador" ></div>
 
 		<div class="vertical-line"></div>
-		<div class="col-md-9 col-xs-12">
+		<div class="col-md-8 col-xs-12">
 			<div class="contenedor box">
 
 				<div class="row textoBarraNavegacion">
@@ -126,6 +103,7 @@
 
 				</div>
 			</div>
+			<div id="footer" class="col-xs-12 footer"></div>
 		</div>
 
 	

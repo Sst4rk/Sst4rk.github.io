@@ -8,7 +8,6 @@ function menuCloser(){
 }
 
 
-
 window.onscroll = function() {
     let boton =document.getElementById("botonArriba");
     if (window.scrollY>500)

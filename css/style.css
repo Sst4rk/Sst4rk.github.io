@@ -2,6 +2,7 @@ html {
     background-color:#000E3F;
     margin:0;
     scroll-behavior: smooth;
+    scrollbar-color: green;
 }
 body{
     margin:0;
@@ -62,7 +63,7 @@ img.logoLetras{
 
 
 .main{
-    height:100%;padding:0;
+    height:100%;padding:0;min-height: 100vh;
 }
 
 
@@ -111,7 +112,7 @@ img.logoLetras{
 }
 
 .contenedor{
-    padding:5%;
+    padding:0;
 }
 .texto{
     padding:6%;
@@ -178,7 +179,7 @@ p{
     max-height:42px;
 }
 .imgRedes:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
     transition-duration:0.2s;
     filter: invert(34%) sepia(34%) saturate(4362%) hue-rotate(161deg) brightness(97%) contrast(88%);
 }
@@ -332,6 +333,14 @@ img {
     opacity: 0%;
 }
 
+.footer{
+    bottom: 0;
+    position: initial;
+    right: 35%;
+}
+.footer a{
+    color:white;
+}
 
 
 
