@@ -16,6 +16,7 @@ body{
 }
 a{
     text-decoration:none;
+    color:white;
 }
 .logo{
     width:30%;
@@ -119,7 +120,7 @@ img.logoLetras{
 }
 
 p{
-    margin:0;
+    margin:10px 0 10px 0;
     font-size: 1.15em;
     text-align:justify;
 }
@@ -161,6 +162,9 @@ p{
 
 .cajaArticulo{
     padding-top: 5%;
+}
+.cajaArticulo h1{
+    font-size: 3em;
 }
 .imgTitulo{
     width:32%;
@@ -207,7 +211,7 @@ p{
 }
 
 .cajaArticulo>h2{
-    
+    text-align: justify;
     font-weight:bolder;
 }
 .cajaArticulo>h3{
@@ -290,6 +294,9 @@ img {
     border:solid 1px white;
     padding:2%;
 }
+.previewArticulo a:hover{
+    text-decoration:underline;
+}
 .previewArticulo img{
     width: 95%;
 }
@@ -339,12 +346,18 @@ img {
 }
 .footer a{
     color:white;
+    font-size:0.9em;
+    opacity: 50%;
 }
 
 .descarga img:hover{
     transform:scale(1.1);
     transition-duration: 0.5s;
 
+}
+.contactos h2{
+    font-weight: normal;
+    text-align: left;
 }
 
 
