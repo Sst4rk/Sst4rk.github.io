@@ -165,6 +165,14 @@ p{
 }
 .cajaArticulo h1{
     font-size: 3em;
+    font-family: Arial;
+}
+.cajaArticulo h2{
+    text-align: justify;
+    font-weight:bolder;
+}
+.cajaArticulo h3{
+    font-weight: bolder;
 }
 .imgTitulo{
     width:32%;
@@ -210,13 +218,6 @@ p{
     min-height: 20%;
 }
 
-.cajaArticulo>h2{
-    text-align: justify;
-    font-weight:bolder;
-}
-.cajaArticulo>h3{
-    font-weight: bolder;
-}
 
 h1{
     text-align: center;
