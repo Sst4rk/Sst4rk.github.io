@@ -28,29 +28,24 @@
 
 
 <body>
-	<div class="row movilMenuIcon" onclick="menuOpener()">
-		<div class="row">
-			<div class="col-xs-2">
-				<img class="imgMenu" src="/img/menu.png" alt="Menu">
-			</div>
-			<div class="col-xs-10 center-xs">
-				<text class="menuText">MENU</text>
-			</div>
-		</div>
-	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script> 
+		$(function(){
+			$("#menuMovil").load("/secciones/menuMovil.html");
+			$("#navegador").load("/secciones/menuNav.html"); 
+			$("#footer").load("/secciones/footer.html");
+		});
+	</script>
+
+	<div id="menuMovil" class="row movilMenuIcon" onclick="menuOpener()"></div>
 
 	<div class="row center-xs main">
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-		<script> 
-			$(function(){
-				$("#navegador").load("/menuNav.html"); 
-				$("#footer").load("/footer.html");
-			});
-		</script>
+		
 
 		<div id="navegador" class="col-md-2 col-xs-12 center-xs navegador" ></div>
-		<div class="col-md-2 col-xs-12 center-xs" ></div>
+		<div class="col-md-2 col-xs-12 center-xs navInvisible" ></div>
+
 
 		<div class="vertical-line"></div>
 		<div class="col-md-8 col-xs-12">
@@ -61,7 +56,7 @@
 					<a href="/articulos/windows11/">> Windows 11 > </a>
                 </div>
 
-                <div clas="row cajaMadreArticulo">
+                <div class="row cajaMadreArticulo">
                     <div class="ext_marco">
                         <div class="inter_marco box">
                             <div class="row">
