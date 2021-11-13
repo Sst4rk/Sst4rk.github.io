@@ -408,6 +408,7 @@ img {
     body{
         margin:0;
         background-position: top 11% right 15px;
+        background-image: none;
     }
     .ext_marco{
         margin:0%;
