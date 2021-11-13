@@ -13,6 +13,7 @@ body{
     background-repeat:no-repeat;
     background-position: top right;
     background-size: 5.5%;
+    background-position-x: 97%;
 }
 a{
     text-decoration:none;
