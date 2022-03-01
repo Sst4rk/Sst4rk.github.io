@@ -17,3 +17,10 @@ window.onscroll = function() {
         
     }
   };
+
+
+let texto = "Bienvenidos a STAR SYSTEM"
+
+const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto))
+
+hablar(texto);
